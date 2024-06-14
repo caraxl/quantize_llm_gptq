@@ -37,7 +37,7 @@ def build_conversation():
     return messages
 
 def predict(messages:List[dict],tokenizer:AutoTokenizer,model:AutoModelForCausalLM):
-    device = "cuda:1"  # 指定推理设备
+    device = "cuda:0"  # 指定推理设备
     text = tokenizer.apply_chat_template(
         messages,
         tokenize=False,
