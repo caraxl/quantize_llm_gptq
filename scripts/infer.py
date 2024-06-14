@@ -1,7 +1,8 @@
 import torch
-import time,gc
+import time,gc,os
 from transformers import AutoModelForCausalLM, AutoTokenizer,GenerationConfig
 from typing import List,Dict
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 def bytes_to_giga_bytes(bytes)->int:
     '''
