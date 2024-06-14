@@ -4,6 +4,7 @@ from transformers import AutoTokenizer,AutoModelForCausalLM
 from typing import Dict,List
 import shutil,os
 from utils import load_json
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 # 参考：https://medium.com/@sharmamridul1612/optimizing-llama-3-on-gptq-787830f97ea4
 
 def flush():
