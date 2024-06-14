@@ -1,0 +1,13 @@
+# python=3.9.19
+# cuda=11.8
+accelerate==0.22.0
+auto-gptq==0.4.2
+datasets==2.19.2
+optimum==1.12.0
+pandas==2.2.2
+peft==0.11.1
+sentencepiece==0.2.0
+tokenizers==0.19.1
+torch==2.3.1
+transformers==4.41.2
+
